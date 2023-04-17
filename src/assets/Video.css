@@ -1,0 +1,138 @@
+.video_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 300px;
+    cursor: pointer;
+
+}
+
+
+.video_side_bar{
+    position: relative;
+    left: 221px;
+    bottom: 309px;
+    color: white;
+}
+
+.sideBar_button{
+    padding: 17px;
+    text-align: center;
+}
+
+
+
+.videoFooter{
+    position: relative;
+    color: white;
+    display: flex;
+    bottom: 425px;
+    margin-left: 26px;
+
+    
+}
+
+.videoFooter_record{
+    animation: spinTheRecord infinite 5s linear;
+    height: 39px;
+    color: white;
+    position: absolute;
+    right: 190px;
+    top: 20px;
+    border-radius: 20px;
+    /* to see the animation */
+}
+
+.videoFooter_text{
+    flex: 1;
+    position: relative;
+    right: 0px;
+    top: 62px;
+    font-family: 'Quicksand', sans-serif;
+}
+.music__note{
+    filter: invert(1);
+}
+
+.username{
+    margin-bottom: 2px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: white;
+}
+.desc_name{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.video_footer_ticker p{
+    padding-top: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    bottom: 10px;
+    overflow: hidden;
+}
+
+.video_footer_icon{
+position: absolute;
+top: 60px;
+left: -9px;
+}
+
+.video_footer_ticker .ticker{
+    height: fit-content;
+    margin-left: 19px;
+    width: 60%;
+    margin-top: 6px;
+    font-size: 1rem;
+}
+
+@keyframes spinTheRecord{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.app_video{
+    /* relative means all the rules will be applied within the container only */
+    position: relative; 
+    overflow: scroll;
+    border-radius: 20px;
+    height: 800px;
+    width: 80%;
+    max-width: 500px;
+    scroll-snap-type: y mandatory;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+
+}
+
+.app_video::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* video component styles  */
+.videoz{
+    height: 580px;
+    width: 368px;
+    position: relative;
+    scroll-snap-align: center;
+    cursor: pointer;
+}
+
+.video__playerz{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
